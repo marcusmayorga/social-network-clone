@@ -4,7 +4,9 @@ $header-background: #3B5998;
 .header {
   background-color: $header-background;
   color: $header-text-color;
+  padding: 15px;
   &__logo-area {
+    width: 20%;
     display: inline-block;
     color: $header-text-color;
     &--link {
@@ -14,12 +16,18 @@ $header-background: #3B5998;
     }
   }
   &__menu {
+    width: 20%;
     display: inline-block;
+    border-right: 1px solid rgba(255,255,255,0.5);
+    text-align: right;
+    padding-right: 20px;
     &--list {
       display: inline-block;
       &-item {
         display: inline-block;
+        margin-right:20px;
         &-link {
+          font-size: 14px;
           color: $header-text-color;
           text-decoration: none;
         }
@@ -27,29 +35,55 @@ $header-background: #3B5998;
     }
   }
   &__icon-links {
+    width: 20%;
     display: inline-block;
-  }
-  &__quick-options {
-    display: inline-block;
-    &-item{
+    padding-left: 20px;
+    &--quick-options {
+      border-right: 1px solid rgba(255,255,255,0.5);
       display: inline-block;
-      &-link{
-        color: $header-text-color;
-        text-decoration: none;
+      padding-left: 20px;
+      padding-right: 20px;
+      &-item {
+        display: inline-block;
+        margin-right: 10px;
+        &-link {
+          font-size: 16px;
+          color: $header-text-color;
+          text-decoration: none;
+        }
       }
     }
   }
+  
   &__privacy {
     display: inline-block;
+    padding-left: 20px;
     &--link {
       color: $header-text-color;
     }
   }
   &__search-area {
+    width: 40%;
     display: inline-block;
+    text-align: right;
+    & ::placeholder{
+      color: rgba(255,255,255,0.5);
+    }
     &--list {
+      display: inline-block;
       &-item {
         display: inline-block;
+        & input[type="text"]{
+          background-color: $header-background;
+          border: none;
+          border-bottom: 1px solid rgba(255,255,255,0.5);
+          &:focus {
+            outline: none;
+          }
+        }
+        & input {
+          caret-color: $header-text-color;
+        }
       }
     }
   }

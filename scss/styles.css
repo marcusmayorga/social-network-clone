@@ -65,9 +65,11 @@ html {
 .header {
   background-color: #3B5998;
   color: #fff;
+  padding: 15px;
 }
 
 .header__logo-area {
+  width: 20%;
   display: inline-block;
   color: #fff;
 }
@@ -79,7 +81,11 @@ html {
 }
 
 .header__menu {
+  width: 20%;
   display: inline-block;
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+  text-align: right;
+  padding-right: 20px;
 }
 
 .header__menu--list {
@@ -88,32 +94,42 @@ html {
 
 .header__menu--list-item {
   display: inline-block;
+  margin-right: 20px;
 }
 
 .header__menu--list-item-link {
+  font-size: 14px;
   color: #fff;
   text-decoration: none;
 }
 
 .header__icon-links {
+  width: 20%;
   display: inline-block;
+  padding-left: 20px;
 }
 
-.header__quick-options {
+.header__icon-links--quick-options {
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
   display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.header__quick-options-item {
+.header__icon-links--quick-options-item {
   display: inline-block;
+  margin-right: 10px;
 }
 
-.header__quick-options-item-link {
+.header__icon-links--quick-options-item-link {
+  font-size: 16px;
   color: #fff;
   text-decoration: none;
 }
 
 .header__privacy {
   display: inline-block;
+  padding-left: 20px;
 }
 
 .header__privacy--link {
@@ -121,10 +137,46 @@ html {
 }
 
 .header__search-area {
+  width: 40%;
+  display: inline-block;
+  text-align: right;
+}
+
+.header__search-area ::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.header__search-area :-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.header__search-area ::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.header__search-area ::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.header__search-area--list {
   display: inline-block;
 }
 
 .header__search-area--list-item {
   display: inline-block;
+}
+
+.header__search-area--list-item input[type="text"] {
+  background-color: #3B5998;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.header__search-area--list-item input[type="text"]:focus {
+  outline: none;
+}
+
+.header__search-area--list-item input {
+  caret-color: #fff;
 }
 /*# sourceMappingURL=styles.css.map */
