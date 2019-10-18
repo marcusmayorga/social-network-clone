@@ -6,33 +6,34 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Social Network Clone</title>
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="scss/styles.css">
 </head>
 <body>
   <header class="header">
-    <div class="header__logo">
-      Logo
+    <div class="header__logo-area">
+     <a class="header__logo-area--link" href="index.html">Logo</a> 
     </div>
-    <div class="header__user-nav">
-      <ul>
-        <li><a href="chloe.html">Chloe</a></li>
-        <li><a href="home.html">Home</a></li>
+    <div class="header__menu">
+      <ul class="header__menu--list">
+        <li class="header__menu--list-item"><a class="header__menu--list-item-link" href="chloe.html">Chloe</a></li>
+        <li class="header__menu--list-item"><a class="header__menu--list-item-link" href="home.html">Home</a></li>
       </ul>
     </div>
-    <div class="header__user-options">
-      <ul>
-        <li><a href="chloe.html"><i class="fa fa-users" aria-hidden="true"></i></a></li>
-        <li><a href="home.html"><i class="fa fa-comments" aria-hidden="true"></i></a></li>
-        <li><a href="home.html"><i class="fa fa-bell" aria-hidden="true"></i></a></li>
+    <div class="header__icon-links">
+      <ul class="header__quick-options">
+        <li class="header__quick-options-item"><a class="header__quick-options-item-link" href="chloe.html"><i class="fa fa-users" aria-hidden="true"></i></a></li>
+        <li class="header__quick-options-item"><a class="header__quick-options-item-link" href="home.html"><i class="fa fa-comments" aria-hidden="true"></i></a></li>
+        <li class="header__quick-options-item"><a class="header__quick-options-item-link" href="home.html"><i class="fa fa-bell" aria-hidden="true"></i></a></li>
       </ul>
-      <div class="header__user-settings">
-        <a href="#"><i class="fa fa-cog" aria-hidden="true"></i></a>
+      <div class="header__privacy">
+        <a class="header__privacy--link" href="#"><i class="fa fa-unlock-alt" aria-hidden="true"></i></a>
       </div>
     </div>
-    <div class="header__search">
-      <ul>
-        <li><i class="fa fa-search" aria-hidden="true"></i></li>
-        <li><input type="text" name="search" placeholder="Search"></li>
-        <li><i class="fa fa-times" aria-hidden="true"></i></li>
+    <div class="header__search-area">
+      <ul class="header__search-area--list">
+        <li class="header__search-area--list-item"><i class="fa fa-search" aria-hidden="true"></i></li>
+        <li class="header__search-area--list-item"><input type="text" name="search" placeholder="Search"></li>
+        <li class="header__search-area--list-item"><i class="fa fa-times" aria-hidden="true"></i></li>
       </ul>
     </div>
   </header>

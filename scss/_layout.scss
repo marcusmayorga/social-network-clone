@@ -4,4 +4,53 @@ $header-background: #3B5998;
 .header {
   background-color: $header-background;
   color: $header-text-color;
+  &__logo-area {
+    display: inline-block;
+    color: $header-text-color;
+    &--link {
+      color: $header-text-color;
+      text-decoration: none;
+      font-size: 20px;
+    }
+  }
+  &__menu {
+    display: inline-block;
+    &--list {
+      display: inline-block;
+      &-item {
+        display: inline-block;
+        &-link {
+          color: $header-text-color;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  &__icon-links {
+    display: inline-block;
+  }
+  &__quick-options {
+    display: inline-block;
+    &-item{
+      display: inline-block;
+      &-link{
+        color: $header-text-color;
+        text-decoration: none;
+      }
+    }
+  }
+  &__privacy {
+    display: inline-block;
+    &--link {
+      color: $header-text-color;
+    }
+  }
+  &__search-area {
+    display: inline-block;
+    &--list {
+      &-item {
+        display: inline-block;
+      }
+    }
+  }
 }
