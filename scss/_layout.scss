@@ -1,5 +1,6 @@
 $header-text-color: #fff;
 $header-background: #3B5998;
+$button-hover: #2196F3;
 
 .header {
   background-color: $header-background;
@@ -84,6 +85,55 @@ $header-background: #3B5998;
         & input {
           caret-color: $header-text-color;
         }
+      }
+    }
+  }
+}
+
+.top-area {
+  padding: 200px 15px 90px 15px;
+  background: url(../img/mountain-view.jpg) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  &__profile-info {
+    padding: 10px;
+    display: inline-block;
+  }
+  &__user-img {
+    display: inline-block;
+    &--border-circle {
+      border-radius: 50%;
+    }
+  }
+  &__user-details {
+    vertical-align: top;
+    display: inline-block;
+    padding-left: 20px;
+    &--header {
+      color: #fff;
+      font-size: 24px;
+      font-weight: 100;
+      margin-top: 40px;
+      margin-bottom: 10px;
+    }
+    &--link {
+      background-color: rgba(255,255,255,.3);
+      display: inline-block;
+      margin-left: -4px;
+      margin-right: 5%;
+      width: 45%;
+      text-align: center;
+      text-transform: uppercase;
+      color: #fff;
+      text-decoration: none;
+      font-size: 10px;
+      padding:10px;
+      border-radius: 3px;
+      transition: background .4s ease-in-out;
+      &:hover {
+        background: $button-hover;
       }
     }
   }
