@@ -138,3 +138,21 @@ $button-hover: #2196F3;
     }
   }
 }
+
+.content-area {
+  &__side-column {
+    float: left;
+    width: 35%;
+    margin: 0 2.5%;
+  }
+  &__main-area {
+    float: left;
+    width: 55%;
+    margin: 0 2.5%;
+  }
+  &__widget-box {
+    &--intro {
+      
+    }
+  }
+}
